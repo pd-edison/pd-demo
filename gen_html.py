@@ -8,12 +8,13 @@ from jinja2 import FileSystemLoader, Environment
 def gen_block_items():
     ret = []
     data_dirs = glob(os.path.join('data/*'))
-    transcriptions = yaml.safe_load('data/transcriptions.yaml')
+    transcriptions = yaml.safe_load(open('data/transcriptions.yaml', 'r'))['data']
+    print(transcriptions)
 
     for data_dir in data_dirs:
         if os.path.isfile(data_dir):
             continue
-        info = yaml.safe_load(open(os.path.join(data_dir, 'info.yaml')))
+        info = yaml.safe_load(open(os.path.join(data_dir, 'info.yaml'), 'r'))
         title = info.pop('title', os.path.basename(data_dir))
         gop = info.pop('gop', '-')
         wavs = sorted(glob(os.path.join(data_dir, '*.wav')))
