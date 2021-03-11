@@ -44,7 +44,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-14 col-md-12 mx-auto">
-                {% for title, gop, wavs in block_items%}
+                {% for title, gop, wavs, transcripts in block_items%}
                 <div class="post-preview">
                     <h2 class="post-title">
                         {{ title }}
@@ -52,10 +52,11 @@
                     <h3 class="post-meta">
                         gop: {{ gop }}
                     </h3>
-                    {% for wav in wavs%}
+                    {% for wav, trans in zip(wavs, transcripts) %}
                     <audio controls preload="none">
                         <source src="{{ wav }}">
                     </audio>
+                    {{ trans }}
                     {% endfor %}
                 </div>
                 {% endfor %}
