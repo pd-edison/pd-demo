@@ -1,34 +1,25 @@
+import os
+from glob import glob
+
+import yaml
 from jinja2 import FileSystemLoader, Environment
 
-import os
-import glob
 
-def gen_oneshot_rows():
+def gen_block_items():
     ret = []
+    data_dirs = glob(os.path.join('data/*'))
 
-    melgan = sorted(glob.glob('data/melgan/*.wav'))
-    pps = 'data/proposed'
-    ada = 'data/adain'
-    vq = 'data/vqvc'
-    au = 'data/autovc'
-
-    for src in melgan:
-        src_basename = os.path.basename(src).split('.')[0]
-        for tgt in melgan:
-            if src == tgt:
-                continue
-            tgt_basename = os.path.basename(tgt).split('.')[0]
-            row = (
-                src_basename,
-                tgt_basename,
-                src, 
-                tgt,
-                os.path.join(pps, f'{src_basename}_to_{tgt_basename}.wav'),
-                os.path.join(ada, f'{src_basename}_to_{tgt_basename}.wav'),
-                os.path.join(vq, f'{src_basename}_to_{tgt_basename}.wav'),
-                os.path.join(au, f'{src_basename}_to_{tgt_basename}.wav'),
+    for data_dir in data_dirs:
+        info = yaml.safe_load(open(os.path.join(data_dir, 'info.yaml')))
+        title = info.pop('title', os.path.basename(data_dir))
+        gop = info.pop('gop', '-')
+        wavs = glob(os.path.join(data_dir, '*.wav'))
+        item = (
+                title,
+                gop,
+                wavs,
             )
-            ret.append(row)
+        ret.append(item)
     return ret
 
 def main():
@@ -37,10 +28,10 @@ def main():
     env = Environment(loader=loader)
     template = env.get_template("base.html.jinja2")
 
-    oneshot_rows = gen_oneshot_rows()
+    block_items = gen_block_items()
 
     html = template.render(
-        oneshot_rows=oneshot_rows,
+        block_items=block_items,
     )
     print(html)
 
