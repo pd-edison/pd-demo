@@ -9,7 +9,6 @@ def gen_block_items():
     ret = []
     data_dirs = glob(os.path.join('data/*'))
     transcriptions = yaml.safe_load(open('data/transcriptions.yaml', 'r'))['data']
-    print(transcriptions)
 
     for data_dir in data_dirs:
         if os.path.isfile(data_dir):
