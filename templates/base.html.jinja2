@@ -103,7 +103,36 @@
                             </tr>
                         </thead>
                         <tbody>
-                            
+                            {% for src_basename, tgt_basename, src, tgt, pps, ada, vq, au in oneshot_rows%}
+                            <tr>
+                                <td>{{ src_basename }}
+                                    <audio controls preload="none">
+                                        <source src="{{ src }}">
+                                    </audio>
+                                </td>
+                                <td>{{ tgt_basename }}
+                                    <audio controls preload="none">
+                                        <source src="{{ tgt }}">
+                                    </audio>
+                                </td>
+                                <td>Proposed
+                                    <audio controls preload="none">
+                                        <source src="{{ pps }}">
+                                    </audio> AdaIN-VC
+                                    <audio controls preload="none">
+                                        <source src="{{ ada }}">
+                                    </audio>
+                                </td>
+                                <td>VQVC+
+                                    <audio controls preload="none">
+                                        <source src="{{ vq }}">
+                                    </audio> AutoVC
+                                    <audio controls preload="none">
+                                        <source src="{{ au }}">
+                                    </audio>
+                                </td>
+                            </tr>
+                            {% endfor %}
                         </tbody>
                     </table>
                 </div>
@@ -121,7 +150,25 @@
                             </tr>
                         </thead>
                         <tbody>
-                            
+                            {% for src_basename, tgt_basename, src, tgt, pps in forfun_rows%}
+                            <tr>
+                                <td>{{ src_basename }}
+                                    <audio controls preload="none">
+                                        <source src="{{ src }}">
+                                    </audio>
+                                </td>
+                                <td>{{ tgt_basename }}
+                                    <audio controls preload="none">
+                                        <source src="{{ tgt }}">
+                                    </audio>
+                                </td>
+                                <td>Proposed
+                                    <audio controls preload="none">
+                                        <source src="{{ pps }}">
+                                    </audio>
+                                </td>
+                            </tr>
+                            {% endfor %}
                         </tbody>
                     </table>
                 </div>
