@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -18,43 +17,54 @@
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-    <!-- Custom styles for this template -->
-    <link href="css/clean-blog.css" rel="stylesheet">
-
 </head>
 
 <body>
     <!-- Page Header -->
-     <header class="masthead" style="background-image: url('img/home-bg.jpg')">
-        <div class="jumbotron">
-            <h1>Ponddy Voice Conversion Demo Page</h1>
+    <header class="masthead">
+        <div class="container">
+            <div class="jumbotron jumbotron-fluid">
+                <h1>Ponddy Voice Conversion Demo Page</h1>
+            </div>
         </div>
     </header>
 
-
     <!-- Main Content -->
     <div class="container">
-        <div class="row">
-            <div class="col-lg-14 col-md-12 mx-auto">
-                {% for title, gop, wavs, transcripts in block_items%}
-                <div class="post-preview">
-                    <h2 class="post-title">
-                        {{ title }}
-                    </h2>
-                    <h3 class="post-meta">
-                        gop: {{ gop }}
-                    </h3>
-                    {% for wav, trans in zip(wavs, transcripts) %}
-                    <audio controls preload="none">
-                        <source src="{{ wav }}">
-                    </audio>
-                    {{ trans }}<br>
-                    {% endfor %}
-                </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                {% for title in titles%}
+                    <th>{{title}}</th>
                 {% endfor %}
-                <hr>
-            </div>
-        </div>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="{{ len(transcriptions) }}">GOP</td>
+                </tr>
+                <tr>
+                    {% for gop in gops%}
+                    <td>{{gop}}</td>
+                    {% endfor %}
+                </tr>
+                {% for transcription, wavs in zip(transcriptions, wavss)%}
+                <tr>
+                    <td colspan="{{ len(transcriptions) }}">{{transcription}}</td>
+                </tr>
+                <tr>
+                    {% for title, wav in zip(titles, wavs) %}
+                    <td>
+                        {{ title }}
+                        <audio controls preload="none" style="width: 200px">
+                            <source src="{{ wav }}">
+                        </audio>
+                    </td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
 
         <!-- Footer -->
         <foo ter>
