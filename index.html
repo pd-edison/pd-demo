@@ -16,412 +16,423 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="css/pd.css" rel="stylesheet">
 
 </head>
 
 <body>
     <!-- Page Header -->
-    <header class="masthead">
-        <div class="container">
-            <div class="jumbotron jumbotron-fluid">
-                <h1>Ponddy Voice Conversion Demo Page</h1>
-            </div>
-        </div>
-    </header>
+    <div class="container fixed-top bg-light">
+        <br><h1>Ponddy Voice Conversion Demo Page</h1><br>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#male">Male</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#female">Female</a>
+            </li>
+        </ul>
+    </div>
+
 
     <!-- Main Content -->
-    <div class="container">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                
-                    <th>pcmer Franco-Colin-VCTK</th>
-                
-                    <th>pcmer Franco-VCTK</th>
-                
-                    <th>pcmer Franco-Colin</th>
-                
-                    <th>one-to-one Franco-Colin (data unbalanced)</th>
-                
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td colspan="9">GOP</td>
-                </tr>
-                <tr>
+    <div class="tab-content">
+        <div id="male" class="container tab-pane active">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
                     
-                    <td>96.271</td>
+                        <th>pcmer Franco-Colin-VCTK</th>
                     
-                    <td>92.412</td>
+                        <th>pcmer Franco-VCTK</th>
                     
-                    <td>91.67</td>
+                        <th>pcmer Franco-Colin</th>
                     
-                    <td>91.49</td>
+                        <th>one-to-one Franco-Colin (data unbalanced)</th>
                     
-                </tr>
-                
-                <tr>
-                    <td colspan="9">How are you going to plan for the future?</td>
-                </tr>
-                <tr>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="9">GOP</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>96.271</td>
+                        
+                        <td>92.412</td>
+                        
+                        <td>91.67</td>
+                        
+                        <td>91.49</td>
+                        
+                    </tr>
                     
-                    <td>
-                        pcmer Franco-Colin-VCTK
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-colin-vctk/Colin_qm_sent_0001.wav">
-                        </audio>
-                    </td>
+                    <tr>
+                        <td colspan="9">How are you going to plan for the future?</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>
+                            pcmer Franco-Colin-VCTK
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-colin-vctk/Colin_qm_sent_0001.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            pcmer Franco-VCTK
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-vctk/FrancoChen_qm_sent_0001.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            pcmer Franco-Colin
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-colin/Colin_qm_sent_0001.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            one-to-one Franco-Colin (data unbalanced)
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/o2o_franco-colin_v1/Colin_qm_sent_0001.wav">
+                            </audio>
+                        </td>
+                        
+                    </tr>
                     
-                    <td>
-                        pcmer Franco-VCTK
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-vctk/FrancoChen_qm_sent_0001.wav">
-                        </audio>
-                    </td>
+                    <tr>
+                        <td colspan="9">If a little knowledge is dangerous, where is the man who has so much as to be out of danger?</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>
+                            pcmer Franco-Colin-VCTK
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-colin-vctk/Colin_qm_sent_0002.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            pcmer Franco-VCTK
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-vctk/FrancoChen_qm_sent_0002.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            pcmer Franco-Colin
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-colin/Colin_qm_sent_0002.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            one-to-one Franco-Colin (data unbalanced)
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/o2o_franco-colin_v1/Colin_qm_sent_0002.wav">
+                            </audio>
+                        </td>
+                        
+                    </tr>
                     
-                    <td>
-                        pcmer Franco-Colin
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-colin/Colin_qm_sent_0001.wav">
-                        </audio>
-                    </td>
+                    <tr>
+                        <td colspan="9">What is more worrying is that many legal and ethical issues are yet to be settled, eg should autonomous cars continue to have a driver?</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>
+                            pcmer Franco-Colin-VCTK
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-colin-vctk/Colin_qm_sent_0003.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            pcmer Franco-VCTK
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-vctk/FrancoChen_qm_sent_0003.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            pcmer Franco-Colin
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-colin/Colin_qm_sent_0003.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            one-to-one Franco-Colin (data unbalanced)
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/o2o_franco-colin_v1/Colin_qm_sent_0003.wav">
+                            </audio>
+                        </td>
+                        
+                    </tr>
                     
-                    <td>
-                        one-to-one Franco-Colin (data unbalanced)
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/o2o_franco-colin_v1/Colin_qm_sent_0001.wav">
-                        </audio>
-                    </td>
+                    <tr>
+                        <td colspan="9">DO you think men or women are more easily deceived by a cheating partner?</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>
+                            pcmer Franco-Colin-VCTK
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-colin-vctk/Colin_qm_sent_0004.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            pcmer Franco-VCTK
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-vctk/FrancoChen_qm_sent_0004.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            pcmer Franco-Colin
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-colin/Colin_qm_sent_0004.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            one-to-one Franco-Colin (data unbalanced)
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/o2o_franco-colin_v1/Colin_qm_sent_0004.wav">
+                            </audio>
+                        </td>
+                        
+                    </tr>
                     
-                </tr>
-                
-                <tr>
-                    <td colspan="9">If a little knowledge is dangerous, where is the man who has so much as to be out of danger?</td>
-                </tr>
-                <tr>
+                    <tr>
+                        <td colspan="9">What's biting her?</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>
+                            pcmer Franco-Colin-VCTK
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-colin-vctk/Colin_qm_sent_0005.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            pcmer Franco-VCTK
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-vctk/FrancoChen_qm_sent_0005.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            pcmer Franco-Colin
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-colin/Colin_qm_sent_0005.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            one-to-one Franco-Colin (data unbalanced)
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/o2o_franco-colin_v1/Colin_qm_sent_0005.wav">
+                            </audio>
+                        </td>
+                        
+                    </tr>
                     
-                    <td>
-                        pcmer Franco-Colin-VCTK
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-colin-vctk/Colin_qm_sent_0002.wav">
-                        </audio>
-                    </td>
+                    <tr>
+                        <td colspan="9">Am I to go about smiling and content with all this talk about you, passing from one idle gossip to another?</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>
+                            pcmer Franco-Colin-VCTK
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-colin-vctk/Colin_qm_sent_0006.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            pcmer Franco-VCTK
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-vctk/FrancoChen_qm_sent_0006.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            pcmer Franco-Colin
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-colin/Colin_qm_sent_0006.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            one-to-one Franco-Colin (data unbalanced)
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/o2o_franco-colin_v1/Colin_qm_sent_0006.wav">
+                            </audio>
+                        </td>
+                        
+                    </tr>
                     
-                    <td>
-                        pcmer Franco-VCTK
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-vctk/FrancoChen_qm_sent_0002.wav">
-                        </audio>
-                    </td>
+                    <tr>
+                        <td colspan="9">What are the ethics behind this enormous expenditure of time, money and effort?</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>
+                            pcmer Franco-Colin-VCTK
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-colin-vctk/Colin_qm_sent_0007.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            pcmer Franco-VCTK
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-vctk/FrancoChen_qm_sent_0007.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            pcmer Franco-Colin
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-colin/Colin_qm_sent_0007.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            one-to-one Franco-Colin (data unbalanced)
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/o2o_franco-colin_v1/Colin_qm_sent_0007.wav">
+                            </audio>
+                        </td>
+                        
+                    </tr>
                     
-                    <td>
-                        pcmer Franco-Colin
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-colin/Colin_qm_sent_0002.wav">
-                        </audio>
-                    </td>
+                    <tr>
+                        <td colspan="9">When do woods and hedgerows offer clearer sight of their dark interiors?</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>
+                            pcmer Franco-Colin-VCTK
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-colin-vctk/Colin_qm_sent_0008.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            pcmer Franco-VCTK
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-vctk/FrancoChen_qm_sent_0008.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            pcmer Franco-Colin
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-colin/Colin_qm_sent_0008.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            one-to-one Franco-Colin (data unbalanced)
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/o2o_franco-colin_v1/Colin_qm_sent_0008.wav">
+                            </audio>
+                        </td>
+                        
+                    </tr>
                     
-                    <td>
-                        one-to-one Franco-Colin (data unbalanced)
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/o2o_franco-colin_v1/Colin_qm_sent_0002.wav">
-                        </audio>
-                    </td>
+                    <tr>
+                        <td colspan="9">They tend to think that the gifted ones will do well anyway, so why bother?</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>
+                            pcmer Franco-Colin-VCTK
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-colin-vctk/Colin_qm_sent_0009.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            pcmer Franco-VCTK
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-vctk/FrancoChen_qm_sent_0009.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            pcmer Franco-Colin
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/pcmer_franco-colin/Colin_qm_sent_0009.wav">
+                            </audio>
+                        </td>
+                        
+                        <td>
+                            one-to-one Franco-Colin (data unbalanced)
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="data/o2o_franco-colin_v1/Colin_qm_sent_0009.wav">
+                            </audio>
+                        </td>
+                        
+                    </tr>
                     
-                </tr>
-                
-                <tr>
-                    <td colspan="9">What is more worrying is that many legal and ethical issues are yet to be settled, eg should autonomous cars continue to have a driver?</td>
-                </tr>
-                <tr>
-                    
-                    <td>
-                        pcmer Franco-Colin-VCTK
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-colin-vctk/Colin_qm_sent_0003.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        pcmer Franco-VCTK
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-vctk/FrancoChen_qm_sent_0003.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        pcmer Franco-Colin
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-colin/Colin_qm_sent_0003.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        one-to-one Franco-Colin (data unbalanced)
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/o2o_franco-colin_v1/Colin_qm_sent_0003.wav">
-                        </audio>
-                    </td>
-                    
-                </tr>
-                
-                <tr>
-                    <td colspan="9">DO you think men or women are more easily deceived by a cheating partner?</td>
-                </tr>
-                <tr>
-                    
-                    <td>
-                        pcmer Franco-Colin-VCTK
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-colin-vctk/Colin_qm_sent_0004.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        pcmer Franco-VCTK
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-vctk/FrancoChen_qm_sent_0004.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        pcmer Franco-Colin
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-colin/Colin_qm_sent_0004.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        one-to-one Franco-Colin (data unbalanced)
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/o2o_franco-colin_v1/Colin_qm_sent_0004.wav">
-                        </audio>
-                    </td>
-                    
-                </tr>
-                
-                <tr>
-                    <td colspan="9">What's biting her?</td>
-                </tr>
-                <tr>
-                    
-                    <td>
-                        pcmer Franco-Colin-VCTK
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-colin-vctk/Colin_qm_sent_0005.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        pcmer Franco-VCTK
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-vctk/FrancoChen_qm_sent_0005.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        pcmer Franco-Colin
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-colin/Colin_qm_sent_0005.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        one-to-one Franco-Colin (data unbalanced)
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/o2o_franco-colin_v1/Colin_qm_sent_0005.wav">
-                        </audio>
-                    </td>
-                    
-                </tr>
-                
-                <tr>
-                    <td colspan="9">Am I to go about smiling and content with all this talk about you, passing from one idle gossip to another?</td>
-                </tr>
-                <tr>
-                    
-                    <td>
-                        pcmer Franco-Colin-VCTK
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-colin-vctk/Colin_qm_sent_0006.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        pcmer Franco-VCTK
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-vctk/FrancoChen_qm_sent_0006.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        pcmer Franco-Colin
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-colin/Colin_qm_sent_0006.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        one-to-one Franco-Colin (data unbalanced)
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/o2o_franco-colin_v1/Colin_qm_sent_0006.wav">
-                        </audio>
-                    </td>
-                    
-                </tr>
-                
-                <tr>
-                    <td colspan="9">What are the ethics behind this enormous expenditure of time, money and effort?</td>
-                </tr>
-                <tr>
-                    
-                    <td>
-                        pcmer Franco-Colin-VCTK
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-colin-vctk/Colin_qm_sent_0007.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        pcmer Franco-VCTK
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-vctk/FrancoChen_qm_sent_0007.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        pcmer Franco-Colin
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-colin/Colin_qm_sent_0007.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        one-to-one Franco-Colin (data unbalanced)
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/o2o_franco-colin_v1/Colin_qm_sent_0007.wav">
-                        </audio>
-                    </td>
-                    
-                </tr>
-                
-                <tr>
-                    <td colspan="9">When do woods and hedgerows offer clearer sight of their dark interiors?</td>
-                </tr>
-                <tr>
-                    
-                    <td>
-                        pcmer Franco-Colin-VCTK
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-colin-vctk/Colin_qm_sent_0008.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        pcmer Franco-VCTK
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-vctk/FrancoChen_qm_sent_0008.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        pcmer Franco-Colin
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-colin/Colin_qm_sent_0008.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        one-to-one Franco-Colin (data unbalanced)
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/o2o_franco-colin_v1/Colin_qm_sent_0008.wav">
-                        </audio>
-                    </td>
-                    
-                </tr>
-                
-                <tr>
-                    <td colspan="9">They tend to think that the gifted ones will do well anyway, so why bother?</td>
-                </tr>
-                <tr>
-                    
-                    <td>
-                        pcmer Franco-Colin-VCTK
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-colin-vctk/Colin_qm_sent_0009.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        pcmer Franco-VCTK
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-vctk/FrancoChen_qm_sent_0009.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        pcmer Franco-Colin
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/pcmer_franco-colin/Colin_qm_sent_0009.wav">
-                        </audio>
-                    </td>
-                    
-                    <td>
-                        one-to-one Franco-Colin (data unbalanced)
-                        <audio controls preload="none" style="width: 200px">
-                            <source src="data/o2o_franco-colin_v1/Colin_qm_sent_0009.wav">
-                        </audio>
-                    </td>
-                    
-                </tr>
-                
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
+        <div id="female" class="container tab-pane fade">
+            <h1>TBD</h1>
+        </div>
+    </div>
 
-        <!-- Footer -->
-        <foo ter>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-10 mx-auto">
-                        <ul class="list-inline text-center">
-                            <li class="list-inline-item">
-                                <a h ref="#">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a h ref="#">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                        <p class="copyright text-muted"> Terms | Privacy | Copyright &copy; Ponddy Education Inc. | All Rights Reserved</p>
-                    </div>
+    <!-- Footer -->
+    <foo ter>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a h ref="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a h ref="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted"> Terms | Privacy | Copyright &copy; Ponddy Education Inc. | All Rights Reserved</p>
                 </div>
             </div>
-            </footer>
-
-            <!-- Bootstrap core JavaScript -->
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-            <!-- Custom scripts for this template -->
-            <script src="js/clean-blog.js"></script>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.js"></script>
 
 </body>
 
