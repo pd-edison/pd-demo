@@ -1,0 +1,11 @@
+use_vocoders:
+    - raw
+    - melgan
+    - pw
+    - mb-melgan
+
+use_files:
+    - AshleyCheng_TW_01_01.wav
+    - catherine_em_sent_0001.wav
+    - Colin_qm_sent_0001.wav
+    - FrancoChen_SJ_01_02.wav
