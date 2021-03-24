@@ -94,7 +94,7 @@
                 <tbody>
                     {% for use_file, wavs in zip(vocoder_items['use_files'], vocoder_items['wavss'])%}
                     <tr>
-                        <td colspan="{{ len(vocoder_items['use_files']) }}">{{use_file}}</td>
+                        <td colspan="{{ len(vocoder_items['titles']) }}">{{use_file}}</td>
                     </tr>
                     <tr>
                         {% for title, wav in zip(vocoder_items['titles'], wavs) %}

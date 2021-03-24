@@ -2,6 +2,7 @@ use_vocoders:
     - melgan
     - pw
     - mb-melgan
+    - lpcnet
 
 use_files:
     - AshleyCheng_TW_01_01
