@@ -41,26 +41,26 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                    {% for title in titles%}
+                    {% for title in male_items['titles']%}
                         <th>{{title}}</th>
                     {% endfor %}
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td colspan="{{ len(transcriptions) }}">GOP</td>
+                        <td colspan="{{ len(male_items['transcriptions']) }}">GOP</td>
                     </tr>
                     <tr>
-                        {% for gop in gops%}
+                        {% for gop in male_items['gops']%}
                         <td>{{gop}}</td>
                         {% endfor %}
                     </tr>
-                    {% for transcription, wavs in zip(transcriptions, wavss)%}
+                    {% for transcription, wavs in zip(male_items['transcriptions'], male_items['wavss'])%}
                     <tr>
-                        <td colspan="{{ len(transcriptions) }}">{{transcription}}</td>
+                        <td colspan="{{ len(male_items['transcriptions']) }}">{{transcription}}</td>
                     </tr>
                     <tr>
-                        {% for title, wav in zip(titles, wavs) %}
+                        {% for title, wav in zip(male_items['titles'], wavs) %}
                         <td>
                             {{ title }}
                             <audio controls preload="none" style="width: 200px">

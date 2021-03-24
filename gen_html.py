@@ -6,25 +6,34 @@ import numpy as np
 from jinja2 import FileSystemLoader, Environment
 
 
-def gen_block_items():
+def gen_male_items():
     ret = []
-    data_dirs = glob(os.path.join('data/*'))
-    transcriptions = yaml.safe_load(open('data/transcriptions.yaml', 'r'))['data']
+    data_dirs = glob(os.path.join('data/male/*'))
+    info = yaml.safe_load(open('data/male/info.yaml', 'r'))
+    transcriptions = info.pop('transcriptions')
     titles = []
     gops = []
     wavss = []
     for data_dir in data_dirs:
         if os.path.isfile(data_dir):
             continue
-        info = yaml.safe_load(open(os.path.join(data_dir, 'info.yaml'), 'r'))
-        title = info.pop('title', os.path.basename(data_dir))
-        gop = info.pop('gop', '-')
+        name = os.path.basename(data_dir)
+        data_info = info.pop(name)
+        title = data_info.pop('title', name)
+        gop = data_info.pop('gop', '-')
         wavs = sorted(glob(os.path.join(data_dir, '*.wav')))
         titles.append(title)
         gops.append(gop)
         wavss.append(wavs)
     wavss = np.array(wavss).T
-    return titles, gops, transcriptions, wavss
+    meta = {
+        'titles': titles,
+        'gops': gops,
+        'transcriptions': transcriptions,
+        'wavss': wavss,
+    }
+    return meta
+
 
 def main():
     """Main function."""
@@ -34,14 +43,11 @@ def main():
     template = env.get_template("pd.html.jinja2")
 
     # block_items = gen_block_items()
-    titles, gops, transcriptions, wavss = gen_block_items()
+    male_items = gen_male_items()
 
     html = template.render(
         # block_items=block_items,
-        titles=titles,
-        gops=gops,
-        transcriptions=transcriptions,
-        wavss=wavss,
+        male_items=male_items,
     )
     print(html)
 

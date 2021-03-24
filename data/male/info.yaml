@@ -1,0 +1,30 @@
+o2o_franco-colin_v1:
+    title: one-to-one Franco-Colin (data unbalanced)
+    gop: 91.49
+
+pcmer_franco-colin:
+    title: pcmer Franco-Colin
+    gop: 91.67
+
+pcmer_franco-colin-vctk:
+    title: pcmer Franco-Colin-VCTK
+    gop: 96.271
+
+pcmer_franco-colin-vctkm:
+    title: pcmer Franco-Colin-VCTK-M
+    gop: 95.98
+
+pcmer_franco-vctk:
+    title: pcmer Franco-VCTK
+    gop: 92.412
+
+transcriptions:
+    - How are you going to plan for the future?
+    - If a little knowledge is dangerous, where is the man who has so much as to be out of danger?
+    - What is more worrying is that many legal and ethical issues are yet to be settled, eg should autonomous cars continue to have a driver?
+    - DO you think men or women are more easily deceived by a cheating partner?
+    - What's biting her?
+    - Am I to go about smiling and content with all this talk about you, passing from one idle gossip to another?
+    - What are the ethics behind this enormous expenditure of time, money and effort?
+    - When do woods and hedgerows offer clearer sight of their dark interiors?
+    - They tend to think that the gifted ones will do well anyway, so why bother?
