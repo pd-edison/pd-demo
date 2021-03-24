@@ -42,14 +42,15 @@ def gen_vocoder_items():
     use_vocoders = info.pop('use_vocoders')
     use_files = info.pop('use_files')
     data_dirs = [os.path.join('data/vocoder', use_vocoder) for use_vocoder in use_vocoders]
-    titles = []
-    wavss = []
+    titles = ['raw']
+    wavs = [os.path.join('raw', use_file+'.wav') for use_file in use_files]
+    wavss = [wavs]
     for data_dir in data_dirs:
         if os.path.isfile(data_dir):
             continue
         name = os.path.basename(data_dir)
         # wavs = sorted(glob(os.path.join(data_dir, '*.wav')))
-        wavs = [os.path.join(data_dir, use_file) for use_file in use_files]
+        wavs = [os.path.join(data_dir, use_file+'_gen.wav') for use_file in use_files]
         titles.append(name)
         wavss.append(wavs)
     wavss = np.array(wavss, dtype=object).T
