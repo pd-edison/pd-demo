@@ -79,7 +79,40 @@
         </div>
         <!-- Female -->
         <div id="female" class="container-fluid tab-pane fade">
-            <h3>TBD</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                    {% for title in female_items['titles']%}
+                        <th>{{title}}</th>
+                    {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="{{ len(female_items['transcriptions']) }}">GOP</td>
+                    </tr>
+                    <tr>
+                        {% for gop in female_items['gops']%}
+                        <td>{{gop}}</td>
+                        {% endfor %}
+                    </tr>
+                    {% for transcription, wavs in zip(female_items['transcriptions'], female_items['wavss'])%}
+                    <tr>
+                        <td colspan="{{ len(female_items['transcriptions']) }}">{{transcription}}</td>
+                    </tr>
+                    <tr>
+                        {% for title, wav in zip(female_items['titles'], wavs) %}
+                        <td>
+                            {{ title }}
+                            <audio controls preload="none" style="width: 200px">
+                                <source src="{{ wav }}">
+                            </audio>
+                        </td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
         </div>
         <!-- Vocoder -->
         <div id="vocoder" class="container-fluid tab-pane fade">

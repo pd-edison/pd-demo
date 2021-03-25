@@ -18,13 +18,14 @@ def gen_gender_items(gender):
         if os.path.isfile(data_dir):
             continue
         name = os.path.basename(data_dir)
-        data_info = info.pop(name)
-        title = data_info.pop('title', name)
-        gop = data_info.pop('gop', '-')
-        wavs = sorted(glob(os.path.join(data_dir, '*.wav')))
-        titles.append(title)
-        gops.append(gop)
-        wavss.append(wavs)
+        data_info = info.pop(name, None)
+        if data_info:
+            title = data_info.pop('title', name)
+            gop = data_info.pop('gop', '-')
+            wavs = sorted(glob(os.path.join(data_dir, '*.wav')))
+            titles.append(title)
+            gops.append(gop)
+            wavss.append(wavs)
     wavss = np.array(wavss).T
     meta = {
         'titles': titles,
@@ -70,10 +71,12 @@ def main():
     template = env.get_template("pd.html.jinja2")
 
     male_items = gen_gender_items('male')
+    female_items = gen_gender_items('female')
     vocoder_items = gen_vocoder_items()
 
     html = template.render(
         male_items=male_items,
+        female_items=female_items,
         vocoder_items=vocoder_items,
     )
     print(html)
