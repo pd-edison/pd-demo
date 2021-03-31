@@ -1,7 +1,25 @@
+vocoder_info:
+    raw:
+        gop: 99.48
+        repo: '-'
+    melgan:
+        gop: 99.085
+        repo: https://github.com/descriptinc/melgan-neurips
+    pw:
+        gop: 99.309
+        repo: https://github.com/kan-bayashi/ParallelWaveGAN
+    mbmelgan:
+        gop: 99.168
+        repo: https://github.com/kan-bayashi/ParallelWaveGAN
+    lpcnet:
+        gop: 97.663
+        repo: https://github.com/mozilla/LPCNet
+
 use_vocoders:
+    - raw
     - melgan
     - pw
-    - mb-melgan
+    - mbmelgan
     - lpcnet
 
 use_files:

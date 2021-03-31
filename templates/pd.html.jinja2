@@ -119,11 +119,25 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                    {% for title in vocoder_items['titles']%}
-                        <th>{{title}}</th>
+                    {% for title, repo in zip(vocoder_items['titles'], vocoder_items['repos'])%}
+                        {% if title == 'raw' %}
+                            <th>{{title}}</th>
+                        {% else %}
+                            <th><a href={{repo}}>{{title}}</a></th>
+                        {% endif %}
                     {% endfor %}
                     </tr>
                 </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="{{ len(vocoder_items['titles']) }}">gop</td>
+                    </tr>
+                    <tr>
+                    {% for gop in vocoder_items['gops']%}
+                        <td>{{gop}}</td>
+                    {% endfor %}
+                    </tr>
+                </tbody>
                 <tbody>
                     {% for use_file, wavs in zip(vocoder_items['use_files'], vocoder_items['wavss'])%}
                     <tr>
