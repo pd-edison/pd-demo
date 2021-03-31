@@ -59,7 +59,10 @@ def gen_vocoder_items():
         _vocoder_info = vocoder_info.pop(name)
         gop = _vocoder_info['gop']
         repo = _vocoder_info['repo']
-        wavs = [os.path.join(data_dir, use_file+'_gen.wav') for use_file in use_files]
+        if name == 'raw':
+            wavs = [os.path.join(data_dir, use_file+'.wav') for use_file in use_files]
+        else:
+            wavs = [os.path.join(data_dir, use_file+'_gen.wav') for use_file in use_files]
         titles.append(name)
         wavss.append(wavs)
         gops.append(gop)
