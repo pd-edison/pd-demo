@@ -28,6 +28,8 @@ def gen_gender_items(gender):
             wavss.append(wavs)
     wavss = np.array(wavss).T
     meta = {
+        'type': 'gender',
+        'tab': gender,
         'titles': titles,
         'gops': gops,
         'transcriptions': transcriptions,
@@ -70,6 +72,8 @@ def gen_vocoder_items():
         
     wavss = np.array(wavss, dtype=object).T
     meta = {
+        'type': 'vocoder',
+        'tab': 'vocoder',
         'titles': titles,
         'use_files': use_files,
         'wavss': wavss,
@@ -86,14 +90,19 @@ def main():
     env.globals.update(zip=zip, len=len)
     template = env.get_template("pd.html.jinja2")
 
+
     male_items = gen_gender_items('male')
     female_items = gen_gender_items('female')
+    pw_male_items = gen_gender_items('pw_male')
+    obama_items = gen_gender_items('obama')
     vocoder_items = gen_vocoder_items()
 
+    items = [
+        male_items, female_items, pw_male_items, obama_items, vocoder_items
+    ]
+
     html = template.render(
-        male_items=male_items,
-        female_items=female_items,
-        vocoder_items=vocoder_items,
+        items=items,
     )
     print(html)
 

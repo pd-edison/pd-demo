@@ -1,26 +1,6 @@
 pcmer_franco-colin-vctkm-v3:
-    title: Franco-Colin-VCTKM (G2P)
-    gop: 96.603
-
-o2o_franco-colin_v1:
-    title: one-to-one Franco-Colin (data unbalanced)
-    gop: 91.49
-
-pcmer_franco-colin:
-    title: pcmer Franco-Colin
-    gop: 91.67
-
-pcmer_franco-colin-vctk:
-    title: pcmer Franco-Colin-VCTK
-    gop: 96.271
-
-pcmer_franco-colin-vctkm:
-    title: pcmer Franco-Colin-VCTK-M
-    gop: 95.98
-
-pcmer_franco-vctk:
-    title: pcmer Franco-VCTK
-    gop: 92.412
+    title: Franco-Colin-VCTKM
+    gop: 94.61
 
 transcriptions:
     - How are you going to plan for the future?

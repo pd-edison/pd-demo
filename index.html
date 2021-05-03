@@ -25,1008 +25,883 @@
     <div class="container-fluid bg-light">
         <br><h1>Ponddy Voice Conversion Demo Page</h1><br>
         <ul class="nav nav-tabs">
+            
             <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#male">Male</a>
+                <a class="nav-link" data-toggle="tab" href=#male>male</a>
             </li>
+            
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#female">Female</a>
+                <a class="nav-link" data-toggle="tab" href=#female>female</a>
             </li>
+            
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#vocoder">Vocoder</a>
+                <a class="nav-link" data-toggle="tab" href=#pw_male>pw_male</a>
             </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href=#obama>obama</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href=#vocoder>vocoder</a>
+            </li>
+            
         </ul>
     </div>
 
+    
+        
+<div id=male class="container-fluid tab-pane fade">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                
+                <th>pcmer Franco-Colin-VCTK</th>
+                
+                <th>pcmer Franco-Colin-VCTK-M</th>
+                
+                <th>pcmer Franco-VCTK</th>
+                
+                <th>pcmer Franco-Colin</th>
+                
+                <th>one-to-one Franco-Colin (data unbalanced)</th>
+                
+                <th>Franco-Colin-VCTKM (G2P)</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="9">GOP</td>
+            </tr>
+            <tr>
+                
+                <td>96.271</td>
+                
+                <td>95.98</td>
+                
+                <td>92.412</td>
+                
+                <td>91.67</td>
+                
+                <td>91.49</td>
+                
+                <td>96.603</td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="9">How are you going to plan for the future?</td>
+            </tr>
+            <tr>
+                
+                <td>
+                    pcmer Franco-Colin-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctk/Colin_qm_sent_0001.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-Colin-VCTK-M
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctkm/Colin_qm_sent_0001.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-vctk/FrancoChen_qm_sent_0001.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-Colin
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin/Colin_qm_sent_0001.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    one-to-one Franco-Colin (data unbalanced)
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/o2o_franco-colin_v1/Colin_qm_sent_0001.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    Franco-Colin-VCTKM (G2P)
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctkm-v3/Colin_qm_sent_0001.wav">
+                    </audio>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="9">If a little knowledge is dangerous, where is the man who has so much as to be out of danger?</td>
+            </tr>
+            <tr>
+                
+                <td>
+                    pcmer Franco-Colin-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctk/Colin_qm_sent_0002.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-Colin-VCTK-M
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctkm/Colin_qm_sent_0002.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-vctk/FrancoChen_qm_sent_0002.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-Colin
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin/Colin_qm_sent_0002.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    one-to-one Franco-Colin (data unbalanced)
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/o2o_franco-colin_v1/Colin_qm_sent_0002.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    Franco-Colin-VCTKM (G2P)
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctkm-v3/Colin_qm_sent_0002.wav">
+                    </audio>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="9">What is more worrying is that many legal and ethical issues are yet to be settled, eg should autonomous cars continue to have a driver?</td>
+            </tr>
+            <tr>
+                
+                <td>
+                    pcmer Franco-Colin-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctk/Colin_qm_sent_0003.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-Colin-VCTK-M
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctkm/Colin_qm_sent_0003.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-vctk/FrancoChen_qm_sent_0003.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-Colin
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin/Colin_qm_sent_0003.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    one-to-one Franco-Colin (data unbalanced)
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/o2o_franco-colin_v1/Colin_qm_sent_0003.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    Franco-Colin-VCTKM (G2P)
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctkm-v3/Colin_qm_sent_0003.wav">
+                    </audio>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="9">DO you think men or women are more easily deceived by a cheating partner?</td>
+            </tr>
+            <tr>
+                
+                <td>
+                    pcmer Franco-Colin-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctk/Colin_qm_sent_0004.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-Colin-VCTK-M
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctkm/Colin_qm_sent_0004.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-vctk/FrancoChen_qm_sent_0004.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-Colin
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin/Colin_qm_sent_0004.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    one-to-one Franco-Colin (data unbalanced)
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/o2o_franco-colin_v1/Colin_qm_sent_0004.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    Franco-Colin-VCTKM (G2P)
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctkm-v3/Colin_qm_sent_0004.wav">
+                    </audio>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="9">What's biting her?</td>
+            </tr>
+            <tr>
+                
+                <td>
+                    pcmer Franco-Colin-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctk/Colin_qm_sent_0005.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-Colin-VCTK-M
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctkm/Colin_qm_sent_0005.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-vctk/FrancoChen_qm_sent_0005.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-Colin
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin/Colin_qm_sent_0005.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    one-to-one Franco-Colin (data unbalanced)
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/o2o_franco-colin_v1/Colin_qm_sent_0005.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    Franco-Colin-VCTKM (G2P)
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctkm-v3/Colin_qm_sent_0005.wav">
+                    </audio>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="9">Am I to go about smiling and content with all this talk about you, passing from one idle gossip to another?</td>
+            </tr>
+            <tr>
+                
+                <td>
+                    pcmer Franco-Colin-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctk/Colin_qm_sent_0006.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-Colin-VCTK-M
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctkm/Colin_qm_sent_0006.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-vctk/FrancoChen_qm_sent_0006.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-Colin
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin/Colin_qm_sent_0006.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    one-to-one Franco-Colin (data unbalanced)
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/o2o_franco-colin_v1/Colin_qm_sent_0006.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    Franco-Colin-VCTKM (G2P)
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctkm-v3/Colin_qm_sent_0006.wav">
+                    </audio>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="9">What are the ethics behind this enormous expenditure of time, money and effort?</td>
+            </tr>
+            <tr>
+                
+                <td>
+                    pcmer Franco-Colin-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctk/Colin_qm_sent_0007.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-Colin-VCTK-M
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctkm/Colin_qm_sent_0007.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-vctk/FrancoChen_qm_sent_0007.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-Colin
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin/Colin_qm_sent_0007.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    one-to-one Franco-Colin (data unbalanced)
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/o2o_franco-colin_v1/Colin_qm_sent_0007.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    Franco-Colin-VCTKM (G2P)
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctkm-v3/Colin_qm_sent_0007.wav">
+                    </audio>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="9">When do woods and hedgerows offer clearer sight of their dark interiors?</td>
+            </tr>
+            <tr>
+                
+                <td>
+                    pcmer Franco-Colin-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctk/Colin_qm_sent_0008.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-Colin-VCTK-M
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctkm/Colin_qm_sent_0008.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-vctk/FrancoChen_qm_sent_0008.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-Colin
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin/Colin_qm_sent_0008.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    one-to-one Franco-Colin (data unbalanced)
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/o2o_franco-colin_v1/Colin_qm_sent_0008.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    Franco-Colin-VCTKM (G2P)
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctkm-v3/Colin_qm_sent_0008.wav">
+                    </audio>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="9">They tend to think that the gifted ones will do well anyway, so why bother?</td>
+            </tr>
+            <tr>
+                
+                <td>
+                    pcmer Franco-Colin-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctk/Colin_qm_sent_0009.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-Colin-VCTK-M
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctkm/Colin_qm_sent_0009.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-vctk/FrancoChen_qm_sent_0009.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Franco-Colin
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin/Colin_qm_sent_0009.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    one-to-one Franco-Colin (data unbalanced)
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/o2o_franco-colin_v1/Colin_qm_sent_0009.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    Franco-Colin-VCTKM (G2P)
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/male/pcmer_franco-colin-vctkm-v3/Colin_qm_sent_0009.wav">
+                    </audio>
+                </td>
+                
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+    
+        
+<div id=female class="container-fluid tab-pane fade">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                
+                <th>PW Ashley-Catherine-VCTK-F</th>
+                
+                <th>pcmer Ashley-Catherine-VCTK-F</th>
+                
+                <th>pcmer Ashley-Catherine-VCTK</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="9">GOP</td>
+            </tr>
+            <tr>
+                
+                <td>96.025</td>
+                
+                <td>95.31</td>
+                
+                <td>94.1</td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="9">How are you going to plan for the future?</td>
+            </tr>
+            <tr>
+                
+                <td>
+                    PW Ashley-Catherine-VCTK-F
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pw_ash-cath-vctkf/Catherine_qm_sent_0001.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Ashley-Catherine-VCTK-F
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pcmer_ash-cath-vctkf/Catherine_qm_sent_0001.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Ashley-Catherine-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pcmer_ash-cath-vctk/Catherine_qm_sent_0001.wav">
+                    </audio>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="9">If a little knowledge is dangerous, where is the man who has so much as to be out of danger?</td>
+            </tr>
+            <tr>
+                
+                <td>
+                    PW Ashley-Catherine-VCTK-F
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pw_ash-cath-vctkf/Catherine_qm_sent_0002.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Ashley-Catherine-VCTK-F
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pcmer_ash-cath-vctkf/Catherine_qm_sent_0002.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Ashley-Catherine-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pcmer_ash-cath-vctk/Catherine_qm_sent_0002.wav">
+                    </audio>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="9">What is more worrying is that many legal and ethical issues are yet to be settled, eg should autonomous cars continue to have a driver?</td>
+            </tr>
+            <tr>
+                
+                <td>
+                    PW Ashley-Catherine-VCTK-F
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pw_ash-cath-vctkf/Catherine_qm_sent_0003.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Ashley-Catherine-VCTK-F
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pcmer_ash-cath-vctkf/Catherine_qm_sent_0003.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Ashley-Catherine-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pcmer_ash-cath-vctk/Catherine_qm_sent_0003.wav">
+                    </audio>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="9">DO you think men or women are more easily deceived by a cheating partner?</td>
+            </tr>
+            <tr>
+                
+                <td>
+                    PW Ashley-Catherine-VCTK-F
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pw_ash-cath-vctkf/Catherine_qm_sent_0004.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Ashley-Catherine-VCTK-F
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pcmer_ash-cath-vctkf/Catherine_qm_sent_0004.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Ashley-Catherine-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pcmer_ash-cath-vctk/Catherine_qm_sent_0004.wav">
+                    </audio>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="9">What's biting her?</td>
+            </tr>
+            <tr>
+                
+                <td>
+                    PW Ashley-Catherine-VCTK-F
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pw_ash-cath-vctkf/Catherine_qm_sent_0005.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Ashley-Catherine-VCTK-F
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pcmer_ash-cath-vctkf/Catherine_qm_sent_0005.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Ashley-Catherine-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pcmer_ash-cath-vctk/Catherine_qm_sent_0005.wav">
+                    </audio>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="9">Am I to go about smiling and content with all this talk about you, passing from one idle gossip to another?</td>
+            </tr>
+            <tr>
+                
+                <td>
+                    PW Ashley-Catherine-VCTK-F
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pw_ash-cath-vctkf/Catherine_qm_sent_0006.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Ashley-Catherine-VCTK-F
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pcmer_ash-cath-vctkf/Catherine_qm_sent_0006.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Ashley-Catherine-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pcmer_ash-cath-vctk/Catherine_qm_sent_0006.wav">
+                    </audio>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="9">What are the ethics behind this enormous expenditure of time, money and effort?</td>
+            </tr>
+            <tr>
+                
+                <td>
+                    PW Ashley-Catherine-VCTK-F
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pw_ash-cath-vctkf/Catherine_qm_sent_0007.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Ashley-Catherine-VCTK-F
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pcmer_ash-cath-vctkf/Catherine_qm_sent_0007.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Ashley-Catherine-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pcmer_ash-cath-vctk/Catherine_qm_sent_0007.wav">
+                    </audio>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="9">When do woods and hedgerows offer clearer sight of their dark interiors?</td>
+            </tr>
+            <tr>
+                
+                <td>
+                    PW Ashley-Catherine-VCTK-F
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pw_ash-cath-vctkf/Catherine_qm_sent_0008.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Ashley-Catherine-VCTK-F
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pcmer_ash-cath-vctkf/Catherine_qm_sent_0008.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Ashley-Catherine-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pcmer_ash-cath-vctk/Catherine_qm_sent_0008.wav">
+                    </audio>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="9">They tend to think that the gifted ones will do well anyway, so why bother?</td>
+            </tr>
+            <tr>
+                
+                <td>
+                    PW Ashley-Catherine-VCTK-F
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pw_ash-cath-vctkf/Catherine_qm_sent_0009.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Ashley-Catherine-VCTK-F
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pcmer_ash-cath-vctkf/Catherine_qm_sent_0009.wav">
+                    </audio>
+                </td>
+                
+                <td>
+                    pcmer Ashley-Catherine-VCTK
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="data/female/pcmer_ash-cath-vctk/Catherine_qm_sent_0009.wav">
+                    </audio>
+                </td>
+                
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+    
+        
+<div id=pw_male class="container-fluid tab-pane fade">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="9">GOP</td>
+            </tr>
+            <tr>
+                
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+    
+        
+<div id=obama class="container-fluid tab-pane fade">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="9">GOP</td>
+            </tr>
+            <tr>
+                
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+    
+        
+<div id=vocoder class="container-fluid tab-pane fade">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                
+                <th>raw</th>
+                
+                <th>melgan</th>
+                
+                <th>pw</th>
+                
+                <th>mbmelgan</th>
+                
+                <th>lpcnet</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="0">GOP</td>
+            </tr>
+            <tr>
+                
+                <td>99.48</td>
+                
+                <td>99.085</td>
+                
+                <td>99.309</td>
+                
+                <td>99.168</td>
+                
+                <td>97.663</td>
+                
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+    
 
-    <!-- Main Content -->
-    <div class="tab-content">
-        <!-- Male -->
-        <div id="male" class="container-fluid tab-pane active">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                    
-                        <th>pcmer Franco-Colin-VCTK</th>
-                    
-                        <th>pcmer Franco-Colin-VCTK-M</th>
-                    
-                        <th>pcmer Franco-VCTK</th>
-                    
-                        <th>PW Franco-Colin-VCTKM</th>
-                    
-                        <th>pcmer Franco-Colin</th>
-                    
-                        <th>one-to-one Franco-Colin (data unbalanced)</th>
-                    
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="9">GOP</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>96.271</td>
-                        
-                        <td>95.98</td>
-                        
-                        <td>92.412</td>
-                        
-                        <td>96.603</td>
-                        
-                        <td>91.67</td>
-                        
-                        <td>91.49</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="9">How are you going to plan for the future?</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            pcmer Franco-Colin-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin-vctk/Colin_qm_sent_0001.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-Colin-VCTK-M
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin-vctkm/Colin_qm_sent_0001.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-vctk/FrancoChen_qm_sent_0001.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            PW Franco-Colin-VCTKM
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pw_franco-colin-vctkm/Colin_qm_sent_0001.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-Colin
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin/Colin_qm_sent_0001.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            one-to-one Franco-Colin (data unbalanced)
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/o2o_franco-colin_v1/Colin_qm_sent_0001.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="9">If a little knowledge is dangerous, where is the man who has so much as to be out of danger?</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            pcmer Franco-Colin-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin-vctk/Colin_qm_sent_0002.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-Colin-VCTK-M
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin-vctkm/Colin_qm_sent_0002.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-vctk/FrancoChen_qm_sent_0002.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            PW Franco-Colin-VCTKM
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pw_franco-colin-vctkm/Colin_qm_sent_0002.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-Colin
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin/Colin_qm_sent_0002.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            one-to-one Franco-Colin (data unbalanced)
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/o2o_franco-colin_v1/Colin_qm_sent_0002.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="9">What is more worrying is that many legal and ethical issues are yet to be settled, eg should autonomous cars continue to have a driver?</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            pcmer Franco-Colin-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin-vctk/Colin_qm_sent_0003.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-Colin-VCTK-M
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin-vctkm/Colin_qm_sent_0003.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-vctk/FrancoChen_qm_sent_0003.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            PW Franco-Colin-VCTKM
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pw_franco-colin-vctkm/Colin_qm_sent_0003.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-Colin
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin/Colin_qm_sent_0003.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            one-to-one Franco-Colin (data unbalanced)
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/o2o_franco-colin_v1/Colin_qm_sent_0003.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="9">DO you think men or women are more easily deceived by a cheating partner?</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            pcmer Franco-Colin-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin-vctk/Colin_qm_sent_0004.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-Colin-VCTK-M
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin-vctkm/Colin_qm_sent_0004.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-vctk/FrancoChen_qm_sent_0004.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            PW Franco-Colin-VCTKM
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pw_franco-colin-vctkm/Colin_qm_sent_0004.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-Colin
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin/Colin_qm_sent_0004.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            one-to-one Franco-Colin (data unbalanced)
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/o2o_franco-colin_v1/Colin_qm_sent_0004.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="9">What's biting her?</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            pcmer Franco-Colin-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin-vctk/Colin_qm_sent_0005.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-Colin-VCTK-M
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin-vctkm/Colin_qm_sent_0005.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-vctk/FrancoChen_qm_sent_0005.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            PW Franco-Colin-VCTKM
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pw_franco-colin-vctkm/Colin_qm_sent_0005.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-Colin
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin/Colin_qm_sent_0005.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            one-to-one Franco-Colin (data unbalanced)
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/o2o_franco-colin_v1/Colin_qm_sent_0005.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="9">Am I to go about smiling and content with all this talk about you, passing from one idle gossip to another?</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            pcmer Franco-Colin-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin-vctk/Colin_qm_sent_0006.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-Colin-VCTK-M
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin-vctkm/Colin_qm_sent_0006.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-vctk/FrancoChen_qm_sent_0006.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            PW Franco-Colin-VCTKM
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pw_franco-colin-vctkm/Colin_qm_sent_0006.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-Colin
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin/Colin_qm_sent_0006.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            one-to-one Franco-Colin (data unbalanced)
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/o2o_franco-colin_v1/Colin_qm_sent_0006.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="9">What are the ethics behind this enormous expenditure of time, money and effort?</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            pcmer Franco-Colin-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin-vctk/Colin_qm_sent_0007.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-Colin-VCTK-M
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin-vctkm/Colin_qm_sent_0007.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-vctk/FrancoChen_qm_sent_0007.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            PW Franco-Colin-VCTKM
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pw_franco-colin-vctkm/Colin_qm_sent_0007.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-Colin
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin/Colin_qm_sent_0007.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            one-to-one Franco-Colin (data unbalanced)
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/o2o_franco-colin_v1/Colin_qm_sent_0007.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="9">When do woods and hedgerows offer clearer sight of their dark interiors?</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            pcmer Franco-Colin-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin-vctk/Colin_qm_sent_0008.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-Colin-VCTK-M
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin-vctkm/Colin_qm_sent_0008.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-vctk/FrancoChen_qm_sent_0008.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            PW Franco-Colin-VCTKM
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pw_franco-colin-vctkm/Colin_qm_sent_0008.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-Colin
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin/Colin_qm_sent_0008.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            one-to-one Franco-Colin (data unbalanced)
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/o2o_franco-colin_v1/Colin_qm_sent_0008.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="9">They tend to think that the gifted ones will do well anyway, so why bother?</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            pcmer Franco-Colin-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin-vctk/Colin_qm_sent_0009.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-Colin-VCTK-M
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin-vctkm/Colin_qm_sent_0009.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-vctk/FrancoChen_qm_sent_0009.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            PW Franco-Colin-VCTKM
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pw_franco-colin-vctkm/Colin_qm_sent_0009.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Franco-Colin
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/pcmer_franco-colin/Colin_qm_sent_0009.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            one-to-one Franco-Colin (data unbalanced)
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/male/o2o_franco-colin_v1/Colin_qm_sent_0009.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                </tbody>
-            </table>
-        </div>
-        <!-- Female -->
-        <div id="female" class="container-fluid tab-pane fade">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                    
-                        <th>PW Ashley-Catherine-VCTK-F</th>
-                    
-                        <th>pcmer Ashley-Catherine-VCTK-F</th>
-                    
-                        <th>pcmer Ashley-Catherine-VCTK</th>
-                    
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="9">GOP</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>96.03</td>
-                        
-                        <td>95.31</td>
-                        
-                        <td>94.1</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="9">How are you going to plan for the future?</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            PW Ashley-Catherine-VCTK-F
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pw_ash-cath-vctkf/Catherine_qm_sent_0001.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Ashley-Catherine-VCTK-F
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pcmer_ash-cath-vctkf/Catherine_qm_sent_0001.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Ashley-Catherine-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pcmer_ash-cath-vctk/Catherine_qm_sent_0001.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="9">If a little knowledge is dangerous, where is the man who has so much as to be out of danger?</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            PW Ashley-Catherine-VCTK-F
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pw_ash-cath-vctkf/Catherine_qm_sent_0002.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Ashley-Catherine-VCTK-F
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pcmer_ash-cath-vctkf/Catherine_qm_sent_0002.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Ashley-Catherine-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pcmer_ash-cath-vctk/Catherine_qm_sent_0002.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="9">What is more worrying is that many legal and ethical issues are yet to be settled, eg should autonomous cars continue to have a driver?</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            PW Ashley-Catherine-VCTK-F
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pw_ash-cath-vctkf/Catherine_qm_sent_0003.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Ashley-Catherine-VCTK-F
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pcmer_ash-cath-vctkf/Catherine_qm_sent_0003.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Ashley-Catherine-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pcmer_ash-cath-vctk/Catherine_qm_sent_0003.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="9">DO you think men or women are more easily deceived by a cheating partner?</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            PW Ashley-Catherine-VCTK-F
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pw_ash-cath-vctkf/Catherine_qm_sent_0004.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Ashley-Catherine-VCTK-F
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pcmer_ash-cath-vctkf/Catherine_qm_sent_0004.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Ashley-Catherine-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pcmer_ash-cath-vctk/Catherine_qm_sent_0004.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="9">What's biting her?</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            PW Ashley-Catherine-VCTK-F
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pw_ash-cath-vctkf/Catherine_qm_sent_0005.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Ashley-Catherine-VCTK-F
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pcmer_ash-cath-vctkf/Catherine_qm_sent_0005.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Ashley-Catherine-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pcmer_ash-cath-vctk/Catherine_qm_sent_0005.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="9">Am I to go about smiling and content with all this talk about you, passing from one idle gossip to another?</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            PW Ashley-Catherine-VCTK-F
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pw_ash-cath-vctkf/Catherine_qm_sent_0006.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Ashley-Catherine-VCTK-F
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pcmer_ash-cath-vctkf/Catherine_qm_sent_0006.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Ashley-Catherine-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pcmer_ash-cath-vctk/Catherine_qm_sent_0006.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="9">What are the ethics behind this enormous expenditure of time, money and effort?</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            PW Ashley-Catherine-VCTK-F
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pw_ash-cath-vctkf/Catherine_qm_sent_0007.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Ashley-Catherine-VCTK-F
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pcmer_ash-cath-vctkf/Catherine_qm_sent_0007.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Ashley-Catherine-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pcmer_ash-cath-vctk/Catherine_qm_sent_0007.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="9">When do woods and hedgerows offer clearer sight of their dark interiors?</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            PW Ashley-Catherine-VCTK-F
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pw_ash-cath-vctkf/Catherine_qm_sent_0008.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Ashley-Catherine-VCTK-F
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pcmer_ash-cath-vctkf/Catherine_qm_sent_0008.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Ashley-Catherine-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pcmer_ash-cath-vctk/Catherine_qm_sent_0008.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="9">They tend to think that the gifted ones will do well anyway, so why bother?</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            PW Ashley-Catherine-VCTK-F
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pw_ash-cath-vctkf/Catherine_qm_sent_0009.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Ashley-Catherine-VCTK-F
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pcmer_ash-cath-vctkf/Catherine_qm_sent_0009.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pcmer Ashley-Catherine-VCTK
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/female/pcmer_ash-cath-vctk/Catherine_qm_sent_0009.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                </tbody>
-            </table>
-        </div>
-        <!-- Vocoder -->
-        <div id="vocoder" class="container-fluid tab-pane fade">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                    
-                        
-                            <th>raw</th>
-                        
-                    
-                        
-                            <th><a href=https://github.com/descriptinc/melgan-neurips>melgan</a></th>
-                        
-                    
-                        
-                            <th><a href=https://github.com/kan-bayashi/ParallelWaveGAN>pw</a></th>
-                        
-                    
-                        
-                            <th><a href=https://github.com/kan-bayashi/ParallelWaveGAN>mbmelgan</a></th>
-                        
-                    
-                        
-                            <th><a href=https://github.com/mozilla/LPCNet>lpcnet</a></th>
-                        
-                    
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="5">gop</td>
-                    </tr>
-                    <tr>
-                    
-                        <td>99.48</td>
-                    
-                        <td>99.085</td>
-                    
-                        <td>99.309</td>
-                    
-                        <td>99.168</td>
-                    
-                        <td>97.663</td>
-                    
-                    </tr>
-                </tbody>
-                <tbody>
-                    
-                    <tr>
-                        <td colspan="5">AshleyCheng_TW_01_01</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            raw
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/raw/AshleyCheng_TW_01_01.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            melgan
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/melgan/AshleyCheng_TW_01_01_gen.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pw
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/pw/AshleyCheng_TW_01_01_gen.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            mbmelgan
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/mbmelgan/AshleyCheng_TW_01_01_gen.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            lpcnet
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/lpcnet/AshleyCheng_TW_01_01_gen.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="5">catherine_em_sent_0001</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            raw
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/raw/catherine_em_sent_0001.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            melgan
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/melgan/catherine_em_sent_0001_gen.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pw
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/pw/catherine_em_sent_0001_gen.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            mbmelgan
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/mbmelgan/catherine_em_sent_0001_gen.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            lpcnet
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/lpcnet/catherine_em_sent_0001_gen.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="5">Colin_qm_sent_0001</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            raw
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/raw/Colin_qm_sent_0001.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            melgan
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/melgan/Colin_qm_sent_0001_gen.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pw
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/pw/Colin_qm_sent_0001_gen.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            mbmelgan
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/mbmelgan/Colin_qm_sent_0001_gen.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            lpcnet
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/lpcnet/Colin_qm_sent_0001_gen.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="5">FrancoChen_SJ_01_02</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>
-                            raw
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/raw/FrancoChen_SJ_01_02.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            melgan
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/melgan/FrancoChen_SJ_01_02_gen.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            pw
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/pw/FrancoChen_SJ_01_02_gen.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            mbmelgan
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/mbmelgan/FrancoChen_SJ_01_02_gen.wav">
-                            </audio>
-                        </td>
-                        
-                        <td>
-                            lpcnet
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="data/vocoder/lpcnet/FrancoChen_SJ_01_02_gen.wav">
-                            </audio>
-                        </td>
-                        
-                    </tr>
-                    
-                </tbody>
-            </table>
-        </div>
-    </div>
+
+
 
     <!-- Footer -->
     <foo ter>

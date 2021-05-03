@@ -25,139 +25,20 @@
     <div class="container-fluid bg-light">
         <br><h1>Ponddy Voice Conversion Demo Page</h1><br>
         <ul class="nav nav-tabs">
+            {% for item in items%}
             <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#male">Male</a>
+                <a class="nav-link" data-toggle="tab" href=#{{ item['tab'] }}>{{ item['tab'] }}</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#female">Female</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#vocoder">Vocoder</a>
-            </li>
+            {% endfor %}
         </ul>
     </div>
 
+    {% for i in range(len(items)) %}
+        {% include items[i]['type'] + ".jinja2" %}
+    {% endfor %}
 
-    <!-- Main Content -->
-    <div class="tab-content">
-        <!-- Male -->
-        <div id="male" class="container-fluid tab-pane active">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                    {% for title in male_items['titles']%}
-                        <th>{{title}}</th>
-                    {% endfor %}
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="{{ len(male_items['transcriptions']) }}">GOP</td>
-                    </tr>
-                    <tr>
-                        {% for gop in male_items['gops']%}
-                        <td>{{gop}}</td>
-                        {% endfor %}
-                    </tr>
-                    {% for transcription, wavs in zip(male_items['transcriptions'], male_items['wavss'])%}
-                    <tr>
-                        <td colspan="{{ len(male_items['transcriptions']) }}">{{transcription}}</td>
-                    </tr>
-                    <tr>
-                        {% for title, wav in zip(male_items['titles'], wavs) %}
-                        <td>
-                            {{ title }}
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="{{ wav }}">
-                            </audio>
-                        </td>
-                        {% endfor %}
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </div>
-        <!-- Female -->
-        <div id="female" class="container-fluid tab-pane fade">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                    {% for title in female_items['titles']%}
-                        <th>{{title}}</th>
-                    {% endfor %}
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="{{ len(female_items['transcriptions']) }}">GOP</td>
-                    </tr>
-                    <tr>
-                        {% for gop in female_items['gops']%}
-                        <td>{{gop}}</td>
-                        {% endfor %}
-                    </tr>
-                    {% for transcription, wavs in zip(female_items['transcriptions'], female_items['wavss'])%}
-                    <tr>
-                        <td colspan="{{ len(female_items['transcriptions']) }}">{{transcription}}</td>
-                    </tr>
-                    <tr>
-                        {% for title, wav in zip(female_items['titles'], wavs) %}
-                        <td>
-                            {{ title }}
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="{{ wav }}">
-                            </audio>
-                        </td>
-                        {% endfor %}
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </div>
-        <!-- Vocoder -->
-        <div id="vocoder" class="container-fluid tab-pane fade">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                    {% for title, repo in zip(vocoder_items['titles'], vocoder_items['repos'])%}
-                        {% if title == 'raw' %}
-                            <th>{{title}}</th>
-                        {% else %}
-                            <th><a href={{repo}}>{{title}}</a></th>
-                        {% endif %}
-                    {% endfor %}
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="{{ len(vocoder_items['titles']) }}">gop</td>
-                    </tr>
-                    <tr>
-                    {% for gop in vocoder_items['gops']%}
-                        <td>{{gop}}</td>
-                    {% endfor %}
-                    </tr>
-                </tbody>
-                <tbody>
-                    {% for use_file, wavs in zip(vocoder_items['use_files'], vocoder_items['wavss'])%}
-                    <tr>
-                        <td colspan="{{ len(vocoder_items['titles']) }}">{{use_file}}</td>
-                    </tr>
-                    <tr>
-                        {% for title, wav in zip(vocoder_items['titles'], wavs) %}
-                        <td>
-                            {{ title }}
-                            <audio controls preload="none" style="width: 200px">
-                                <source src="{{ wav }}">
-                            </audio>
-                        </td>
-                        {% endfor %}
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </div>
-    </div>
+
+
 
     <!-- Footer -->
     <foo ter>

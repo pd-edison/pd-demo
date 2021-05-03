@@ -1,0 +1,37 @@
+{% set male_items = items[i] %}
+<div id={{ male_items['tab'] }} class="container-fluid tab-pane fade">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                {% for title in male_items['titles']%}
+                <th>{{title}}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="{{ len(male_items['transcriptions']) }}">GOP</td>
+            </tr>
+            <tr>
+                {% for gop in male_items['gops']%}
+                <td>{{gop}}</td>
+                {% endfor %}
+            </tr>
+            {% for transcription, wavs in zip(male_items['transcriptions'], male_items['wavss'])%}
+            <tr>
+                <td colspan="{{ len(male_items['transcriptions']) }}">{{transcription}}</td>
+            </tr>
+            <tr>
+                {% for title, wav in zip(male_items['titles'], wavs) %}
+                <td>
+                    {{ title }}
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="{{ wav }}">
+                    </audio>
+                </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
