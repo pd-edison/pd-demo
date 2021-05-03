@@ -33,9 +33,11 @@
         </ul>
     </div>
 
-    {% for i in range(len(items)) %}
+    <div class="tab-content">
+        {% for i in range(len(items)) %}
         {% include items[i]['type'] + ".jinja2" %}
-    {% endfor %}
+        {% endfor %}
+    </div>
 
 
 
