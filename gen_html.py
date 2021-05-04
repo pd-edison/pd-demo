@@ -94,11 +94,17 @@ def main():
     male_items = gen_gender_items('male')
     female_items = gen_gender_items('female')
     pw_male_items = gen_gender_items('pw_male')
+    pw_female_items = gen_gender_items('pw_female')
     obama_items = gen_gender_items('obama')
     vocoder_items = gen_vocoder_items()
 
     items = [
-        male_items, female_items, pw_male_items, obama_items, vocoder_items
+        male_items,
+        female_items,
+        pw_male_items,
+        pw_female_items,
+        obama_items,
+        vocoder_items,
     ]
 
     html = template.render(
