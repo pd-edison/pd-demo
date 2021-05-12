@@ -1,5 +1,15 @@
+use_data:
+    - source
+    - pw_ash-cath-vctkf
+    - pcmer_ash-cath-vctkf
+    - pcmer_ash-cath-vctk
+
+source:
+    title: Source
+    gop: 0
+
 pw_ash-cath-vctkf:
-    title: PW Ashley-Catherine-VCTK-F
+    title: pcmer Ashley-Catherine-VCTK-F (GOP修正，不是PW)
     gop: 96.025
 
 pcmer_ash-cath-vctkf:

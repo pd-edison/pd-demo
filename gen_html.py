@@ -8,9 +8,11 @@ from jinja2 import FileSystemLoader, Environment
 
 def gen_gender_items(gender):
     ret = []
-    data_dirs = glob(os.path.join(f'data/{gender}/*'))
     info = yaml.safe_load(open(f'data/{gender}/info.yaml', 'r'))
     transcriptions = info.pop('transcriptions')
+    use_data = info.pop('use_data', ['source'])
+    # data_dirs = glob(os.path.join(f'data/{gender}/*'))
+    data_dirs = [os.path.join('data', gender,  d) for d in use_data]
     titles = []
     gops = []
     wavss = []
@@ -26,7 +28,7 @@ def gen_gender_items(gender):
             titles.append(title)
             gops.append(gop)
             wavss.append(wavs)
-    wavss = np.array(wavss).T
+    wavss = np.array(wavss, dtype=object).T
     meta = {
         'type': 'gender',
         'tab': gender,

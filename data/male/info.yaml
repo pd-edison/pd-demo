@@ -1,5 +1,16 @@
+use_data:
+    - source
+    - pcmer_franco-colin-vctkm-v3
+    - pcmer_franco-colin-vctkm
+    - pcmer_franco-vctk
+    - pcmer_franco-colin
+
+source:
+    title: Source
+    gop: 0
+
 pcmer_franco-colin-vctkm-v3:
-    title: Franco-Colin-VCTKM (G2P)
+    title: Franco-Colin-VCTKM (G2P 修正)
     gop: 96.603
 
 o2o_franco-colin_v1:
