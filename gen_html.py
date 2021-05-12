@@ -24,6 +24,7 @@ def gen_gender_items(gender):
             title = data_info.pop('title', name)
             gop = data_info.pop('gop', '-')
             target = data_info.pop('target', None)
+            target = os.path.join(data_dir, target) if target else None
             wavs = sorted(glob(os.path.join(data_dir, '*.wav')))
             targets.append(target)
             titles.append(title)
