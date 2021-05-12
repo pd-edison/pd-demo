@@ -11,15 +11,13 @@ def gen_gender_items(gender):
     info = yaml.safe_load(open(f'data/{gender}/info.yaml', 'r'))
     transcriptions = info.pop('transcriptions')
     use_data = info.pop('use_data', ['source'])
-    # data_dirs = glob(os.path.join(f'data/{gender}/*'))
-    data_dirs = [os.path.join('data', gender,  d) for d in use_data]
     titles = []
     gops = []
     wavss = []
-    for data_dir in data_dirs:
+    for name in use_data:
+        data_dir = os.path.join('data', gender, name)
         if os.path.isfile(data_dir):
             continue
-        name = os.path.basename(data_dir)
         data_info = info.pop(name, None)
         if data_info:
             title = data_info.pop('title', name)

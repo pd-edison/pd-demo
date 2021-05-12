@@ -1,3 +1,11 @@
+use_data:
+    - ../male/source
+    - franco-colin-vctkm
+
+../male/source:
+    title: Source
+    gop: 0
+
 franco-colin-vctkm:
     title: Franco-Colin-VCTKM
     gop: 94.61

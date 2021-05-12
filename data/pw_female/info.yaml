@@ -1,3 +1,11 @@
+use_data:
+    - ../female/source
+    - ash-cath-vctkf
+
+../female/source:
+    title: Source
+    gop: 0
+
 ash-cath-vctkf:
     title: Ashley-Catherine-VCTKM
     gop: 96.63
