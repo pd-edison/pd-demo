@@ -3,19 +3,33 @@
     <table class="table table-striped">
         <thead>
             <tr>
-                {% for title in item['titles']%}
+                {%- for title in item['titles']%}
                 <th>{{title}}</th>
-                {% endfor %}
+                {%- endfor %}
             </tr>
         </thead>
         <tbody>
             <tr>
+                <td colspan="{{ len(item['transcriptions']) }}">Target</td>
+            </tr>
+            <tr>
+                {% for target in item['targets'] -%}
+                <td> 
+                    {% if target != None -%}
+                    <audio controls preload="none" style="width: 200px">
+                        <source src="{{ target }}">
+                    </audio>
+                    {%- endif %}
+                </td>
+                {% endfor %}
+            </tr>
+            <tr>
                 <td colspan="{{ len(item['transcriptions']) }}">GOP</td>
             </tr>
             <tr>
-                {% for gop in item['gops']%}
+                {%- for gop in item['gops'] %}
                 <td>{{gop}}</td>
-                {% endfor %}
+                {%- endfor %}
             </tr>
             {% for transcription, wavs in zip(item['transcriptions'], item['wavss'])%}
             <tr>

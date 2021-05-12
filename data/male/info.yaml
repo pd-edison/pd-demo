@@ -7,31 +7,36 @@ use_data:
 
 source:
     title: Source
-    gop: 0
 
 pcmer_franco-colin-vctkm-v3:
     title: Franco-Colin-VCTKM (G2P 修正)
     gop: 96.603
+    target: franco/FrancoChen_SJ_02_03.wav
 
 o2o_franco-colin_v1:
     title: one-to-one Franco-Colin (data unbalanced)
     gop: 91.49
+    target: franco/FrancoChen_SJ_02_03.wav
 
 pcmer_franco-colin:
     title: pcmer Franco-Colin
     gop: 91.67
+    target: franco/FrancoChen_SJ_02_03.wav
 
 pcmer_franco-colin-vctk:
     title: pcmer Franco-Colin-VCTK
     gop: 96.271
+    target: franco/FrancoChen_SJ_02_03.wav
 
 pcmer_franco-colin-vctkm:
     title: pcmer Franco-Colin-VCTK-M
     gop: 95.98
+    target: franco/FrancoChen_SJ_02_03.wav
 
 pcmer_franco-vctk:
     title: pcmer Franco-VCTK
     gop: 92.412
+    target: franco/FrancoChen_SJ_02_03.wav
 
 transcriptions:
     - How are you going to plan for the future?

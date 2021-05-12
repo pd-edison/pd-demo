@@ -4,11 +4,12 @@ use_data:
 
 ../female/source:
     title: Source
-    gop: 0
 
 ash-cath-vctkf:
     title: Ashley-Catherine-VCTKM
+    target: ../female/ashley/AshleyCheng_TW_02_03.wav
     gop: 96.63
+
 
 transcriptions:
     - How are you going to plan for the future?

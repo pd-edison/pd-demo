@@ -12,6 +12,7 @@ def gen_gender_items(gender):
     transcriptions = info.pop('transcriptions')
     use_data = info.pop('use_data', ['source'])
     titles = []
+    targets = []
     gops = []
     wavss = []
     for name in use_data:
@@ -22,7 +23,9 @@ def gen_gender_items(gender):
         if data_info:
             title = data_info.pop('title', name)
             gop = data_info.pop('gop', '-')
+            target = data_info.pop('target', None)
             wavs = sorted(glob(os.path.join(data_dir, '*.wav')))
+            targets.append(target)
             titles.append(title)
             gops.append(gop)
             wavss.append(wavs)
@@ -31,6 +34,7 @@ def gen_gender_items(gender):
         'type': 'gender',
         'tab': gender,
         'titles': titles,
+        'targets': targets,
         'gops': gops,
         'transcriptions': transcriptions,
         'wavss': wavss,

@@ -4,11 +4,12 @@ use_data:
 
 ../male/source:
     title: Source
-    gop: 0
 
 franco-colin-vctkm:
     title: Franco-Colin-VCTKM
+    target: ../male/franco/FrancoChen_SJ_02_03.wav
     gop: 94.61
+
 
 transcriptions:
     - How are you going to plan for the future?

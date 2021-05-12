@@ -1,6 +1,13 @@
+use_data:
+    - source
+    - melgan-obama-vctkm
+
+source:
+    title: Source
+
 melgan-obama-vctkm:
     title: Franco-Colin-VCTKM (MelGAN)
-    gop: 0
+    target: 001.wav
 
 transcriptions:
     - Why not go the whole hog and make them take in a stranger as a lodger
