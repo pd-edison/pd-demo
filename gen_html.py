@@ -102,6 +102,7 @@ def main():
     pw_male_items = gen_gender_items('pw_male')
     pw_female_items = gen_gender_items('pw_female')
     obama_items = gen_gender_items('obama')
+    zh_male_items = gen_gender_items('zh-male')
     vocoder_items = gen_vocoder_items()
 
     items = [
@@ -110,6 +111,7 @@ def main():
         pw_male_items,
         pw_female_items,
         obama_items,
+        zh_male_items,
         vocoder_items,
     ]
 

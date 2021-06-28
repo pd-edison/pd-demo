@@ -2,7 +2,7 @@ use_data:
     - source
     - xi-chang-aishell-chang
     - ko-chang-aishellm-chang
-    - ko-chang-aishell-ko
+    - ko-chang-aishellm-ko
 
 
 source:
@@ -11,12 +11,12 @@ source:
 xi-chang-aishell-chang:
     title: xi-chang-aishell-chang
     gop: 0
-    target: chang/ko-chang-aishell-ko.wav
+    target: chang/001-200_005_27915-30683.wav
 
 ko-chang-aishellm-chang:
     title: ko-chang-aishellm-chang
     gop: 0
-    target: chang/ko-chang-aishell-ko.wav
+    target: chang/001-200_005_27915-30683.wav
 
 ko-chang-aishellm-ko:
     title: ko-chang-aishellm-ko
