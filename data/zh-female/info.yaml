@@ -1,0 +1,24 @@
+use_data:
+    - source
+    - xi-chang-aishell-xi
+
+
+source:
+    title: Source
+
+xi-chang-aishell-chang:
+    title: xi-chang-aishell-xi
+    gop: 0
+    target: xi/001-200_005_27915-30683.wav
+
+
+transcriptions:
+    - 武术始终被看作我国的国粹
+    - 新政的推出是一项长远的制度安排
+    - 其实无论是通过和什么厂商合作
+    - 江苏修鞋奶奶婉拒捐款一人养活患病老伴和儿子
+    - 以及一堂七对七美式橄榄球的讲解课
+    - 使自己得到更多的实惠
+    - 还失去政策推出的良好契机和市场对改革的信任
+    - 对工艺进步是起到反派作用还是辅佐作用呢
+    - 搜狐娱乐讯环球国际影业于宣布
