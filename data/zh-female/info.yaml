@@ -6,7 +6,7 @@ use_data:
 source:
     title: Source
 
-xi-chang-aishell-chang:
+xi-chang-aishell-xi:
     title: xi-chang-aishell-xi
     gop: 0
     target: xi/1001-1050_1012_78885-81632.wav
